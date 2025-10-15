@@ -57,7 +57,7 @@ function renderBlogs(containerId: string, blogs: Blog[]): void {
     descEl.className = "blog-desc";
     descEl.textContent = blog.description;
 
-    // clickable area 
+    // clickable area
     link.append(titleEl, imgEl);
 
     // build card
