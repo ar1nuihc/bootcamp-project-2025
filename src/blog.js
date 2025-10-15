@@ -26,6 +26,7 @@ function renderBlogs(containerId, blogs) {
     container.textContent = "";
     var frag = document.createDocumentFragment();
     blogs.forEach(function (blog) {
+       
         // Create the blog post container <div>
         var post = document.createElement("div");
         post.className = "blog-post";
@@ -49,9 +50,10 @@ function renderBlogs(containerId, blogs) {
         post.append(titleEl, imgEl, descEl);
         
         // Append the post <div> to the main container
-       
         frag.appendChild(post);
+    
     });
+    
     container.appendChild(frag);
 }
 
