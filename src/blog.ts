@@ -37,7 +37,7 @@ function renderBlogs(containerId: string, blogs: Blog[]): void {
     const post = document.createElement("div");
     post.className = "blog-post";
 
-    // main link → blogs/<slug>.html
+    // main link -> blogs/<slug>.html
     const link = document.createElement("a");
     link.className = "blog-link";
     link.href = `blogs/${blog.slug}.html`;
@@ -57,7 +57,7 @@ function renderBlogs(containerId: string, blogs: Blog[]): void {
     descEl.className = "blog-desc";
     descEl.textContent = blog.description;
 
-    // clickable area = image + title
+    // clickable area 
     link.append(titleEl, imgEl);
 
     // build card

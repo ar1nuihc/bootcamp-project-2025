@@ -26,10 +26,10 @@ function renderBlogs(containerId, blogs) {
     container.textContent = "";
     var frag = document.createDocumentFragment();
     blogs.forEach(function (blog) {
-        // 1) Create the blog post container <div>
+        // Create the blog post container <div>
         var post = document.createElement("div");
         post.className = "blog-post";
-        // 2) Create child elements: <h1>, <img>, <p>
+        // Create child elements
         var titleEl = document.createElement("h1");
         titleEl.className = "blog-title";
         titleEl.textContent = blog.title;
@@ -41,9 +41,9 @@ function renderBlogs(containerId, blogs) {
         var descEl = document.createElement("p");
         descEl.className = "blog-desc";
         descEl.textContent = blog.description;
-        // 3) Append children to the post <div>
+        // Append children to the post <div>
         post.append(titleEl, imgEl, descEl);
-        // 4) Append the post <div> to the main container
+        // Append the post <div> to the main container
         frag.appendChild(post);
     });
     container.appendChild(frag);
