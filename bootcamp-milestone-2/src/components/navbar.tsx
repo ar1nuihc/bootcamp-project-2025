@@ -9,16 +9,18 @@ export default function Navbar() {
     // NOTE: we use "class" in HTML but React is quirky so we have to 
     // change all the "class" to "className"
     <header className={style./*whatever class name you put*/}>
-      <h1> Singh's Personal Website </h1>
-      <nav>
-        {/* We'll use Link from now on instead of <a></a>
-			      Links are just Next.js wrapper arounds <a> elements anyways
-         */}
-        <Link href="/">Home</Link>
-        <Link href="/blogs">Blogs</Link>
-        <Link href="/resume">Resume</Link>
-        <Link href="/about">Contact Me</Link>
-				{/* More Links ... */}
+      <h1> Aron's Personal Website </h1>
+      <nav className="navbar">
+      <h1 className="logo">
+        <a href="index.html">Personal Website</a>
+      </h1>
+      <ul className="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
       </nav>
     </header>
   );
