@@ -1,0 +1,38 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cg-black);
+  color: var(--cg-white);
+  padding: 12px 24px;
+}
+
+.navList {
+  display: flex;
+  margin: 0;
+  flex-direction: row;
+  position: relative;
+  right: 30px;
+  list-style: none;
+  gap: 48px;
+}
+
+.navbar a {
+  color: var(--cg-white);
+  font-weight: bold;
+  margin: 0 12px;
+  text-decoration: none;
+  letter-spacing: 2px;
+
+  font-family: monospace;
+}
+
+.navbar a:hover {
+  color: var(--cg-blue);
+  text-decoration: underline;
+}
+
+.navbar a:active {
+  color: var(--cg-blue);
+}
